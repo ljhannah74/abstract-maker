@@ -1,0 +1,9 @@
+<h3>Deeds</h3>
+<table *ngFor="let deed of abstractSelected.deeds">
+    <tr><td>Grantor: {{deed.grantor}}</td></tr>
+    <tr><td>Grantee: {{deed.grantee}}</td></tr>
+    <tr><td>Dated Date: {{deed.datedDate | date: 'MM/dd/yyyy'}}</td></tr>
+    <tr><td>Recorded Date: {{deed.recordedDate | date: 'MM/dd/yyyy'}}</td></tr>
+    <tr><td>Book/Page: {{deed.book}}/{{deed.page}}</td></tr>
+    <tr><td>Document No: {{deed.docNo}}</td></tr>
+</table>

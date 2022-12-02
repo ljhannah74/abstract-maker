@@ -1,0 +1,8 @@
+<div *ngIf="abstractSelected">
+<h2>{{abstractSelected.orderNo}} Order Details</h2>
+<div><span>Search Date: </span>{{abstractSelected.searchDate | date : "shortDate"}}</div>
+<div><span>Effective Date: </span>{{abstractSelected.effectiveDate | date : "shortDate"}}</div>
+<div><span>Property Addres: </span>{{abstractSelected.propertyAddress}}</div>
+<div><span>Current Vesting:</span>{{abstractSelected.currentVesting}}</div>
+<app-abstract-deeds [abstractId]="abstractSelected.id"></app-abstract-deeds>
+</div>
