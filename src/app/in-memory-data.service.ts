@@ -10,29 +10,22 @@ export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     const abstracts: TitleAbstract[] = [
       { id: 1, 
-        orderNo: '12345678', 
-        searchDate: new Date('2022-11-05'), 
-        effectiveDate: new Date('2022-10-05'), 
-        propertyAddress: '247 Glenn Ave, Canonsburg, PA 15317',
-        currentVesting: 'Lewis Joseph Hannah and Glenda Hannah, Husband and Wife',
+        orderNo: 'EMD21-15002', 
+        clientNo: '21NTMD66992-R',
+        searchDate: new Date('2021-09-17'), 
+        effectiveDate: new Date('2021-09-08'), 
+        propertyAddress: '214 Kent Road, Glen Burnie, MD 21060',
+        currentVesting: 'Jacob E. Patterson and Stephanie Anne Vermeule',
         deeds: [{ id: 1,
           abstractId: 1,
-          grantor: "Mr and Mrs. Presto",
-          grantee: "Lewis Joseph Hannah and Glenda Hannah, Husband and Wife",
-          datedDate: new Date('2006-11-05'),
-          recordedDate: new Date('2006-11-15'),
-          book: "1234",
-          page: "5678",
-          docNo: "12345678"
+          grantor: "Edward Kim",
+          grantee: "Jacob E. Patterson and Stephanie Anne Vermeule, as Joint Tenants and not as Tenants in Common",
+          datedDate: new Date('2017-03-24'),
+          recordedDate: new Date('2017-03-28'),
+          book: "30772",
+          page: "144",
+          docNo: ""
           }]
-      },
-      { id: 2, 
-        orderNo: '2253789', 
-        searchDate: new Date('2022-11-05'), 
-        effectiveDate: new Date('2022-10-11'), 
-        propertyAddress: '1019 Vermont Ave, Pittsburgh, PA 15234',
-        currentVesting: '',
-        deeds: [] 
       }
     ];
 

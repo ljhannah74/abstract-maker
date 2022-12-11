@@ -5,6 +5,7 @@
             <th>Search Date</th>
             <th>Effective Date</th>
             <th>Property Address</th>
+            <th>Borrowers</th>
         </tr>
     </thead>
 
@@ -14,6 +15,7 @@
             <td>{{abstract.searchDate | date: 'MM/dd/yyyy'}}</td>
             <td>{{abstract.effectiveDate | date: 'MM/dd/yyyy'}}</td>
             <td>{{abstract.propertyAddress}}</td>
+            <td>{{abstract.currentVesting}}</td>
         </tr>
     </tbody>
 </table>
